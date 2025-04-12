@@ -5,20 +5,20 @@ import { Footer } from '../components/footer';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons for navigation
 const Work = () => {
   const workImages = [
-    '/project-1-oli.jpg',
-    '/project-2-school.jpg',
-    '/project-3-friendsfinder.jpg',
+    '/images/project-1-oli.jpg',
+    '/images/project-2-school.jpg',
+    '/images/project-3-friendsfinder.jpg',
   ];
   const achievementImages = [
-    '/won-1.jpg',
-    '/won-2.jpg',
-    '/won-3.jpg',
-    '/won-4.jpg',
+    '/images/won-1.jpg',
+    '/images/won-2.jpg',
+    '/images/won-3.jpg',
+    '/images/won-4.jpg',
   ];
   const volunteerImages = [
-    '/volunteer-2.jpg',
-    '/volunteer-4.jpg',
-    '/volunteer-3.jpg',
+    '/images/volunteer-2.jpg',
+    '/images/volunteer-4.jpg',
+    '/images/volunteer-3.jpg',
   ];
 const [currentWorkIndex, setCurrentWorkIndex] = useState(0);
 const [currentAchievementIndex, setCurrentAchievementIndex] = useState(0);

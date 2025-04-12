@@ -6,12 +6,12 @@ import { Footer } from "../components/footer";
 
 const Certification = () => {
   const certificationImages = [
-    "/certificate-main.jpg",
-    "/certificate-main-two.jpg",
-    "/certificate-1.jpg",
-    "/certificate-5.jpg",
-    "/certificate-6.jpg",
-    "/certificate-4.jpg",
+    "/images/certificate-main.jpg",
+    "/images/certificate-main-two.jpg",
+    "/images/certificate-1.jpg",
+    "/images/certificate-5.jpg",
+    "/images/certificate-6.jpg",
+    "/images/certificate-4.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

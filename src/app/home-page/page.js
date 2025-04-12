@@ -49,14 +49,14 @@ const HomePage = () => {
           <div className="md:w-1/2 bg-gray-100 rounded-3xl p-8 space-y-8 shadow-md  shadow-gray-700">
             {/* All Images in One Row */}
             <div className="flex  flex-row gap-6 flex-wrap justify-center">
-              <img src="html.png" alt="HTML" className="w-12 h-12" />
-              <img src="css.png" alt="CSS" className="w-12 h-12" />
-              <img src="js.png" alt="JavaScript" className="w-12 h-12" />
-              <img src="next.png" alt="Next.js" className="w-12 h-12" />
-              <img src="Tailwind CSS.png" alt="Tailwind CSS" className="w-12 h-12" />
-              <img src="git.png" alt="Git" className="w-12 h-12" />
-              <img src="github.png" alt="GitHub" className="w-12 h-12" />
-              <img src="java-logo.png" alt="Java" className="w-12 h-12" />
+              <img src="/images/html.png" alt="HTML" className="w-12 h-12" />
+              <img src="/images/css.png" alt="CSS" className="w-12 h-12" />
+              <img src="/images/js.png" alt="JavaScript" className="w-12 h-12" />
+              <img src="/images/next.png" alt="Next.js" className="w-12 h-12" />
+              <img src="/images/Tailwind CSS.png" alt="Tailwind CSS" className="w-12 h-12" />
+              <img src="/images/git.png" alt="Git" className="w-12 h-12" />
+              <img src="/images/github.png" alt="GitHub" className="w-12 h-12" />
+              <img src="/images/java-logo.png" alt="Java" className="w-12 h-12" />
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ const HomePage = () => {
         <h1 className="mb-8">My Favourite Quote</h1> 
         <div className="flex flex-col items-center bg-gray-100 p-10 rounded-3xl shadow-lg max-w-xl mx-auto shadow-gray-700">
           <img
-            src="ali.jpg"
+            src="/images/ali.jpg"
             alt="Muhammad Ali"
             className="w-40 h-40 object-cover rounded-full mb-6 shadow-md drop-shadow-[0_0_10px_yellow]"
           />
