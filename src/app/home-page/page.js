@@ -2,12 +2,12 @@
 import React from "react";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
-
       {/* Hero Section */}
       <div className="px-6 md:px-20 mt-10">
         <h1 className="text-xl md:text-2xl font-bold">Hello! I'm Shivakumar</h1>
@@ -46,29 +46,31 @@ const HomePage = () => {
           </div>
 
           {/* Tech Cards - RIGHT */}
-          <div className="md:w-1/2 bg-gray-100 rounded-3xl p-8 space-y-8 shadow-md  shadow-gray-700">
+          <div className="md:w-1/2 bg-gray-100 rounded-3xl p-8 space-y-8 shadow-md shadow-gray-700">
             {/* All Images in One Row */}
-            <div className="flex  flex-row gap-6 flex-wrap justify-center">
-              <img src="/images/html.png" alt="HTML" className="w-12 h-12" />
-              <img src="/images/css.png" alt="CSS" className="w-12 h-12" />
-              <img src="/images/js.png" alt="JavaScript" className="w-12 h-12" />
-              <img src="/images/next.png" alt="Next.js" className="w-12 h-12" />
-              <img src="/images/Tailwind CSS.png" alt="Tailwind CSS" className="w-12 h-12" />
-              <img src="/images/git.png" alt="Git" className="w-12 h-12" />
-              <img src="/images/github.png" alt="GitHub" className="w-12 h-12" />
-              <img src="/images/java-logo.png" alt="Java" className="w-12 h-12" />
+            <div className="flex flex-row gap-6 flex-wrap justify-center">
+              <Image src="/images/html.png" alt="HTML" width={48} height={48} className="w-12 h-12" />
+              <Image src="/images/css.png" alt="CSS" width={48} height={48} className="w-12 h-12" />
+              <Image src="/images/js.png" alt="JavaScript" width={48} height={48} className="w-12 h-12" />
+              <Image src="/images/next.png" alt="Next.js" width={48} height={48} className="w-12 h-12" />
+              <Image src="/images/Tailwind CSS.png" alt="Tailwind CSS" width={48} height={48} className="w-12 h-12" />
+              <Image src="/images/git.png" alt="Git" width={48} height={48} className="w-12 h-12" />
+              <Image src="/images/github.png" alt="GitHub" width={48} height={48} className="w-12 h-12" />
+              <Image src="/images/java-logo.png" alt="Java" width={48} height={48} className="w-12 h-12" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Favourite Quote Section */}
-      <div className="text-center text-3xl font-bold mt-20 px-6 ">
-        <h1 className="mb-8">My Favourite Quote</h1> 
+      <div className="text-center text-3xl font-bold mt-20 px-6">
+        <h1 className="mb-8">My Favourite Quote</h1>
         <div className="flex flex-col items-center bg-gray-100 p-10 rounded-3xl shadow-lg max-w-xl mx-auto shadow-gray-700">
-          <img
+          <Image
             src="/images/ali.jpg"
             alt="Muhammad Ali"
+            width={160}
+            height={160}
             className="w-40 h-40 object-cover rounded-full mb-6 shadow-md drop-shadow-[0_0_10px_yellow]"
           />
           <p className="text-xl font-light italic text-gray-700 text-center">

@@ -1,13 +1,14 @@
-"use client"
-import React from 'react'
-import { Footer } from '../components/footer'
-import { useRouter } from 'next/navigation'
-import { Navbar } from '../components/navbar'
+"use client";
+import React from "react";
+import { Footer } from "../components/footer";
+import { useRouter } from "next/navigation";
+import { Navbar } from "../components/navbar";
+import Image from "next/image";
 
 const About = () => {
   const router = useRouter();
   const handleContactRedirect = () => {
-    router.push('/contact-us');
+    router.push("/contact-us");
   };
 
   return (
@@ -42,11 +43,16 @@ const About = () => {
       </div>
 
       <div className="px-6 md:px-16 mt-10">
-        <img
-          src="/images/image.jpg"
-          alt="About Visual"
-          className="w-full h-[300px] md:h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-md"
-        />
+        <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] rounded-3xl shadow-md overflow-hidden">
+          <Image
+            src="/images/image.jpg"  // Ensure this path is correct inside the 'public' folder
+            alt="About Visual"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-3xl"
+            unoptimized
+          />
+        </div>
       </div>
 
       <div className="px-6 md:px-16 mt-10">
@@ -61,11 +67,41 @@ const About = () => {
         <h1 className="font-bold text-2xl md:text-3xl">Tools and Technologies</h1>
         <div className="overflow-hidden py-4 flex justify-center items-center h-40">
           <div className="flex w-max animate-scroll gap-8">
-            <img src="/html.png" className="h-12 md:h-16" alt="HTML" />
-            <img src="/css.png" className="h-12 md:h-16" alt="CSS" />
-            <img src="/next.png" className="h-12 md:h-16" alt="Next.js" />
-            <img src="/git.png" className="h-12 md:h-16" alt="Git" />
-            <img src="/github.png" className="h-12 md:h-16" alt="GitHub" />
+            <Image
+              src="/images/html.png"  // Ensure this path is correct inside the 'public' folder
+              alt="HTML"
+              width={64}
+              height={64}
+              unoptimized
+            />
+            <Image
+              src="/images/css.png"  // Ensure this path is correct inside the 'public' folder
+              alt="CSS"
+              width={64}
+              height={64}
+              unoptimized
+            />
+            <Image
+              src="/images/next.png"  // Ensure this path is correct inside the 'public' folder
+              alt="Next.js"
+              width={64}
+              height={64}
+              unoptimized
+            />
+            <Image
+              src="/images/git.png"  // Ensure this path is correct inside the 'public' folder
+              alt="Git"
+              width={64}
+              height={64}
+              unoptimized
+            />
+            <Image
+              src="/images/github.png"  // Ensure this path is correct inside the 'public' folder
+              alt="GitHub"
+              width={64}
+              height={64}
+              unoptimized
+            />
           </div>
         </div>
       </div>
@@ -94,7 +130,9 @@ const About = () => {
 
         <div className="justify-center items-center flex flex-col mt-14 text-center px-4">
           <h1 className="font-thin text-lg md:text-xl">Have an idea?</h1>
-          <h1 className="text-5xl md:text-7xl font-extrabold">Let's rock <span className="text-gray-400 font-bold">with me</span></h1>
+          <h1 className="text-5xl md:text-7xl font-extrabold">
+            Let's rock <span className="text-gray-400 font-bold">with me</span>
+          </h1>
           <ul className="flex flex-wrap justify-center gap-6 font-bold underline mt-5">
             <li><a href="#">ABOUT ME</a></li>
             <li><a href="#">WORKS</a></li>

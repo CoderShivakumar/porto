@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Navbar } from "../components/navbar";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Footer } from "../components/footer";
+import Image from "next/image";
 
 const Certification = () => {
   const certificationImages = [
@@ -46,11 +47,16 @@ const Certification = () => {
         {/* Image Slider */}
         <div className="relative mt-10 w-full sm:w-3/4 lg:w-1/2 mx-auto">
           <div className="relative w-full max-h-[600px] flex justify-center items-center overflow-hidden">
-            <img
-              src={certificationImages[currentIndex]}
-              alt={`Certification ${currentIndex + 1}`}
-              className="w-full h-auto max-h-[550px] object-contain rounded-lg shadow-lg"
-            />
+            <div className="relative w-full h-[400px] sm:h-[500px]">
+              <Image
+                src={certificationImages[currentIndex]}
+                alt={`Certification ${currentIndex + 1}`}
+                layout="fill"
+                objectFit="contain"
+                unoptimized
+                className="rounded-lg shadow-lg"
+              />
+            </div>
 
             {/* Previous Button */}
             <button
